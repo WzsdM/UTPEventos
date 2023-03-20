@@ -1,0 +1,8 @@
+<ul>
+  {% if auth %}
+  <li><a href="/logout">logout</a></li>
+  {%else%}
+  <li><a href="/">Login</a></li>
+  {%endif%}
+  <li><a href="/home">Home</a></li>
+</ul>
