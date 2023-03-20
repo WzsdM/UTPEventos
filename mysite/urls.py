@@ -12,6 +12,4 @@ urlpatterns = [
     path('evento_admin_detail/<int:id>', views.evento_admin_detail, name='evento_admin_detail' ),
     path('estadisticas/', views.estadisticas, name='estadisticas' ),
     path('editar_usuarios/', views.editar_usuarios, name='editar_usuarios' ),
-    
-    
 ]

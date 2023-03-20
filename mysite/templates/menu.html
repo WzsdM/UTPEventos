@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3297378b0c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'styles/styles.css '%}"/>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/icon.png' %}">
+    <title>UTP Eventos</title>
+</head>
+<body>
+    <!--Menú Principal-->
+    <div class="interface">
+        <div class="menuHeader">
+            <a class="menuPlegable">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <a class="logo" href="#"></a>
+            <a class="user">
+                <i class="fa-solid fa-user" style="margin: auto;"></i>
+            </a>
+        </div>
+
+        <div class="Pmenu">
+            <!--Botón de Inicio (all users)-->
+            <div class="menuButton homeButton">
+                <i class="fa-solid fa-house"></i>
+                <div class="buttonDescription">
+                    <p>Inicio</p>
+                </div>
+            </div>
+            <!--Botón de Mis Eventos (all users)-->
+            <div class="menuButton myEventsButton">
+                <i class="fa-solid fa-calendar-days"></i>
+                <div class="buttonDescription">
+                    <p>Mis Eventos</p>
+                </div>
+            </div>
+            <!--Botón de Administración de Eventos (organizador)-->
+            <div class="menuButton adEventsButton">
+                <i class="fa-solid fa-star"></i>
+                <div class="buttonDescription">
+                    <p>Administrar Eventos</p>
+                </div>
+            </div>
+            <!--Botón de Registro de Asistencias (organizador)-->
+            <div class="menuButton asistenceButton">
+                <i class="fa-solid fa-address-book"></i>
+                <div class="buttonDescription">
+                    <p>Modo Asistencia</p>
+                </div>
+            </div>
+            <!--Botón de Estadísticas (administrador)-->
+            <div class="menuButton stadisticsButton">
+                <i class="fa-solid fa-chart-pie"></i>
+                <div class="buttonDescription">
+                    <p>Estadísticas</p>
+                </div>
+            </div>
+            <!--Botón de Administrador (administrador)-->
+            <div class="menuButton adminButton">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div class="buttonDescription">
+                    <p>Permisos Admin</p>
+                </div>
+            </div>
+            <!--Botón de Salida (all users)-->
+            <div class="menuButton exitButton">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <div class="buttonDescription">
+                    <p>Salir</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>
