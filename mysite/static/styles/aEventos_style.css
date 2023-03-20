@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    z-index: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+}
+
