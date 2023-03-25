@@ -14,6 +14,7 @@
     align-items: center;
     min-height: 100vh;
 }
+
 .row{
     color: #171A20;
     width: 900px;
@@ -55,7 +56,7 @@ img{
     transform: translate(-50%, -50%);
 }
 .text p{
-    color: #fff;
+    color: #aa3b3b;
     font-size: 18px;
 }
 i{
@@ -139,6 +140,8 @@ span a:hover{
     text-decoration: underline;
     color: #000;
 }
+
+
 @media only screen and (max-width: 768px){
     .side-image{
         border-radius: 10px 10px 0 0;
